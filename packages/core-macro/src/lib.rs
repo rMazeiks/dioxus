@@ -1,4 +1,5 @@
 use proc_macro::TokenStream;
+use quote::quote;
 use quote::ToTokens;
 use syn::parse_macro_input;
 
@@ -28,10 +29,27 @@ pub fn derive_typed_builder(input: proc_macro::TokenStream) -> proc_macro::Token
 #[proc_macro_error::proc_macro_error]
 #[proc_macro]
 pub fn rsx(s: TokenStream) -> TokenStream {
-    match syn::parse::<rsx::CallBody>(s) {
-        Err(err) => err.to_compile_error().into(),
-        Ok(stream) => stream.to_token_stream().into(),
-    }
+    // let s: TokenStream = match syn::parse::<rsx::CallBody>(s) {
+    //     Err(err) => err.to_compile_error().into(),
+    //     Ok(stream) => stream.to_token_stream().into(),
+    // };
+
+    // panic!("{:}", s.to_string());
+    // return s;
+
+    let stream = quote! {
+        LazyNodes ::
+           new(move | __cx : NodeFactory | -> VNode
+           {
+               use dioxus_elements :: { GlobalAttributes, SvgAttributes } ;
+               __cx.element(dioxus_elements :: input, __cx.bump().alloc([]),
+               __cx.bump().alloc([dioxus_elements ::
+               input.r#type(__cx, format_args_f! ("text"))]), __cx.bump().alloc([]),
+               None,)
+           })
+    };
+
+    stream.into()
 }
 
 #[proc_macro_attribute]
