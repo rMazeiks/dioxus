@@ -16,7 +16,6 @@ dioxus-core = { path = "./packages/core", version = "^0.2.1" }
 dioxus-html = { path = "./packages/html", version = "^0.2.1", optional = true }
 dioxus-core-macro = { path = "./packages/core-macro", version = "^0.2.1", optional = true }
 dioxus-hooks = { path = "./packages/hooks", version = "^0.2.1", optional = true }
-fermi = { path = "./packages/fermi", version = "^0.2.1", optional = true }
 
 dioxus-web = { path = "./packages/web", version = "^0.2.1", optional = true }
 dioxus-desktop = { path = "./packages/desktop", version = "^0.2.3", optional = true }
@@ -51,7 +50,6 @@ members = [
     "packages/desktop",
     "packages/mobile",
     "packages/interpreter",
-    "packages/fermi",
     "packages/liveview",
 ]
 
@@ -67,7 +65,7 @@ serde_json = "1.0.79"
 rand = { version = "0.8.4", features = ["small_rng"] }
 tokio = { version = "1.16.1", features = ["full"] }
 reqwest = { version = "0.11.9", features = ["json"] }
-dioxus = { path = ".", features = ["desktop", "ssr", "router", "fermi"] }
+dioxus = { path = ".", features = ["desktop", "ssr", "router"] }
 fern = { version = "0.6.0", features = ["colored"] }
 criterion = "0.3.5"
 thiserror = "1.0.30"
