@@ -1,5 +1,5 @@
 [package]
 name = "dioxus"
-version = "0.2.4"
-authors = ["Jonathan Kelley"]
+version = "0.1.0"
+authors = ["Jonathan Kelley", "Reinis Mazeiks"]
 edition = "2021"
