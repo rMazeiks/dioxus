@@ -1,12 +1,12 @@
-mod elements {
-    pub struct input;
+mod inner {
+    pub struct conflict;
 
-    impl input {
+    impl conflict {
         pub fn r#type(&self) {
             loop {}
         }
     }
 }
-pub mod input {}
+pub mod conflict {}
 
-pub use elements::*;
+pub use inner::*;
