@@ -1,5 +1,5 @@
 use dioxus::*;
 
 fn main() {
-    dioxus_elements::input.r#type();
+    dioxus_html::input.r#type();
 }
