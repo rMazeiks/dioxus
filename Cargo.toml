@@ -8,22 +8,17 @@ edition = "2021"
 dioxus-core = { path = "./packages/core", version = "^0.2.1" }
 dioxus-html = { path = "./packages/html", version = "^0.2.1", optional = true }
 
-dioxus-desktop = { path = "./packages/desktop", version = "^0.2.3", optional = true }
-
-
 [features]
 default = ["html"]
 
 html = ["dioxus-html"]
-desktop = ["dioxus-desktop"]
 
 
 [workspace]
 members = [
     "packages/core",
     "packages/html",
-    "packages/desktop",
 ]
 
 [dev-dependencies]
-dioxus = { path = ".", features = ["desktop"] }
+dioxus = { path = "." }

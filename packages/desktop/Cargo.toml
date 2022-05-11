@@ -1,9 +1,0 @@
-[package]
-name = "dioxus-desktop"
-version = "0.2.3"
-authors = ["Jonathan Kelley"]
-edition = "2018"
-
-[dependencies]
-dioxus-core = { path = "../core", version = "^0.2.1" }
-
