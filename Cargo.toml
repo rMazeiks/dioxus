@@ -8,16 +8,14 @@ edition = "2021"
 dioxus-core = { path = "./packages/core", version = "^0.2.1" }
 dioxus-html = { path = "./packages/html", version = "^0.2.1", optional = true }
 dioxus-core-macro = { path = "./packages/core-macro", version = "^0.2.1", optional = true }
-dioxus-hooks = { path = "./packages/hooks", version = "^0.2.1", optional = true }
 
 dioxus-desktop = { path = "./packages/desktop", version = "^0.2.3", optional = true }
 
 
 [features]
-default = ["macro", "hooks", "html"]
+default = ["macro", "html"]
 
 macro = ["dioxus-core-macro"]
-hooks = ["dioxus-hooks"]
 html = ["dioxus-html"]
 desktop = ["dioxus-desktop"]
 
@@ -27,7 +25,6 @@ members = [
     "packages/core",
     "packages/core-macro",
     "packages/html",
-    "packages/hooks",
     "packages/desktop",
 ]
 
