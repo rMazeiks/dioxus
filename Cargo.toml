@@ -17,7 +17,6 @@ dioxus-html = { path = "./packages/html", version = "^0.2.1", optional = true }
 dioxus-core-macro = { path = "./packages/core-macro", version = "^0.2.1", optional = true }
 dioxus-hooks = { path = "./packages/hooks", version = "^0.2.1", optional = true }
 
-dioxus-web = { path = "./packages/web", version = "^0.2.1", optional = true }
 dioxus-desktop = { path = "./packages/desktop", version = "^0.2.3", optional = true }
 
 dioxus-interpreter-js = { path = "./packages/interpreter", version = "^0.2.1", optional = true }
@@ -30,7 +29,6 @@ default = ["macro", "hooks", "html"]
 macro = ["dioxus-core-macro"]
 hooks = ["dioxus-hooks"]
 html = ["dioxus-html"]
-web = ["dioxus-web"]
 desktop = ["dioxus-desktop"]
 liveview = ["dioxus-liveview"]
 
@@ -41,7 +39,6 @@ members = [
     "packages/core-macro",
     "packages/html",
     "packages/hooks",
-    "packages/web",
     "packages/desktop",
     "packages/interpreter",
     "packages/liveview",
