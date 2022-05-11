@@ -29,20 +29,7 @@ pub fn derive_typed_builder(input: proc_macro::TokenStream) -> proc_macro::Token
 #[proc_macro_error::proc_macro_error]
 #[proc_macro]
 pub fn rsx(s: TokenStream) -> TokenStream {
-    // let s: TokenStream = match syn::parse::<rsx::CallBody>(s) {
-    //     Err(err) => err.to_compile_error().into(),
-    //     Ok(stream) => stream.to_token_stream().into(),
-    // };
-
-    // panic!("{:}", s.to_string());
-    // return s;
-
-    let stream = quote! {
-        dioxus_elements ::
-               input.r#type();
-    };
-
-    stream.into()
+    todo!()
 }
 
 #[proc_macro_attribute]

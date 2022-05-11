@@ -5,7 +5,7 @@ fn main() {
 }
 
 fn app(cx: Scope) -> Element {
-    rsx! {}
+    dioxus_elements::input.r#type();
 
     todo!()
 }
