@@ -71,9 +71,8 @@ pub(crate) mod innerlude {
 }
 
 pub use crate::innerlude::{
-    AnyEvent, Attribute, AttributeValue, Component, DioxusElement, DomEdit, Element, ElementId,
-    ElementIdIterator, EventHandler, EventPriority, Listener, NodeFactory, ScopeId, UiEvent,
-    UserEvent, VNode,
+    AnyEvent, Attribute, Component, DioxusElement, ElementId, EventPriority, Listener, NodeFactory,
+    ScopeId, UiEvent, UserEvent, VNode,
 };
 
 /// The purpose of this module is to alleviate imports of many common types
