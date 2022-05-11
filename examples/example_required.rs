@@ -5,9 +5,7 @@ fn main() {
 }
 
 fn app(cx: Scope) -> Element {
-    cx.render(rsx! {
-        input {
-            r#type: "text",
-        }
-    })
+    rsx! {}
+
+    todo!()
 }

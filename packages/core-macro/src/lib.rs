@@ -38,12 +38,8 @@ pub fn rsx(s: TokenStream) -> TokenStream {
     // return s;
 
     let stream = quote! {
-        LazyNodes ::
-           new(move | __cx : NodeFactory | -> VNode
-           {
-               dioxus_elements ::
-               input.r#type()
-           })
+        dioxus_elements ::
+               input.r#type();
     };
 
     stream.into()
