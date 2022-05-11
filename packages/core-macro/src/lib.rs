@@ -41,11 +41,8 @@ pub fn rsx(s: TokenStream) -> TokenStream {
         LazyNodes ::
            new(move | __cx : NodeFactory | -> VNode
            {
-               use dioxus_elements :: { GlobalAttributes, SvgAttributes } ;
-               __cx.element(dioxus_elements :: input, __cx.bump().alloc([]),
-               __cx.bump().alloc([dioxus_elements ::
-               input.r#type(__cx, format_args_f! ("text"))]), __cx.bump().alloc([]),
-               None,)
+               dioxus_elements ::
+               input.r#type()
            })
     };
 

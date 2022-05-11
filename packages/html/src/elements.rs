@@ -9,7 +9,7 @@ impl DioxusElement for input {
 }
 
 impl input {
-    pub fn r#type<'a>(&self, cx: NodeFactory<'a>, val: Arguments) -> Attribute<'a> {
+    pub fn r#type(&self) -> VNode {
         loop {}
     }
 }
