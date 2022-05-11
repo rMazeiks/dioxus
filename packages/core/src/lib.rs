@@ -1,6 +1,4 @@
 #![allow(non_snake_case)]
-#![doc = include_str!("../README.md")]
-#![deny(missing_docs)]
 
 pub(crate) mod arbitrary_value;
 pub(crate) mod diff;
