@@ -6,9 +6,6 @@ pub mod hooks {
 
     #[cfg(all(target_arch = "wasm32", feature = "web"))]
     pub use dioxus_web::use_eval;
-
-    #[cfg(all(not(target_arch = "wasm32"), feature = "desktop"))]
-    pub use dioxus_desktop::use_eval;
 }
 
 #[cfg(feature = "router")]
