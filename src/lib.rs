@@ -2,9 +2,7 @@ mod inner {
     pub struct conflict;
 
     impl conflict {
-        pub fn r#type(&self) {
-            loop {}
-        }
+        pub fn do_stuff(&self) {}
     }
 }
 pub mod conflict {}

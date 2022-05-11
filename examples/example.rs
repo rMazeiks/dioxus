@@ -1,3 +1,3 @@
 fn main() {
-    dioxus::conflict.r#type();
+    dioxus::conflict.do_stuff();
 }
