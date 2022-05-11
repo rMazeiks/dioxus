@@ -72,26 +72,21 @@ pub(crate) mod innerlude {
 
 pub use crate::innerlude::{
     AnyEvent, Attribute, AttributeValue, Component, DioxusElement, DomEdit, Element, ElementId,
-    ElementIdIterator, EventHandler, EventPriority, IntoVNode, LazyNodes, Listener, Mutations,
-    NodeFactory, Properties, SchedulerMsg, Scope, ScopeId, ScopeState, TaskId, UiEvent, UserEvent,
-    VComponent, VElement, VFragment, VNode, VPlaceholder, VText, VirtualDom,
+    ElementIdIterator, EventHandler, EventPriority, Listener, NodeFactory, ScopeId, UiEvent,
+    UserEvent, VNode,
 };
 
 /// The purpose of this module is to alleviate imports of many common types
 ///
 /// This includes types like [`Scope`], [`Element`], and [`Component`].
 pub mod prelude {
-    pub use crate::innerlude::{
-        fc_to_builder, Attributes, Component, DioxusElement, Element, EventHandler, Fragment,
-        LazyNodes, NodeFactory, Properties, Scope, ScopeId, ScopeState, VNode, VirtualDom,
-    };
+    pub use crate::innerlude::{Element, LazyNodes, NodeFactory, Scope, VNode};
 }
 
 pub mod exports {
     //! Important dependencies that are used by the rest of the library
     //! Feel free to just add the dependencies in your own Crates.toml
     pub use bumpalo;
-    pub use futures_channel;
 }
 
 /// Functions that wrap unsafe functionality to prevent us from misusing it at the callsite
