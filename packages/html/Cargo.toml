@@ -1,7 +1,0 @@
-[package]
-name = "dioxus-html"
-version = "0.2.1"
-authors = ["Jonathan Kelley"]
-edition = "2018"
-
-[dependencies]

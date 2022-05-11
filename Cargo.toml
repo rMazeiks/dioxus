@@ -3,11 +3,3 @@ name = "dioxus"
 version = "0.2.4"
 authors = ["Jonathan Kelley"]
 edition = "2021"
-
-[dependencies]
-dioxus-html = { path = "./packages/html", version = "^0.2.1" }
-
-[workspace]
-members = [
-    "packages/html",
-]
