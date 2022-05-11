@@ -5,6 +5,6 @@ mod inner {
         pub fn do_stuff(&self) {}
     }
 }
-pub mod conflict {}
+mod conflict {}
 
 pub use inner::*;
