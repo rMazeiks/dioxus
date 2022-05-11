@@ -14,8 +14,6 @@
 //! Currently, we don't validate for structures, but do validate attributes.
 
 mod elements;
-mod global_attributes;
 pub mod input;
 
 pub use elements::*;
-pub use global_attributes::*;
