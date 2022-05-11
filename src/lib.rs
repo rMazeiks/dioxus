@@ -1,14 +1,12 @@
-pub mod dioxus_html {
-    mod elements {
-        pub struct input;
+mod elements {
+    pub struct input;
 
-        impl input {
-            pub fn r#type(&self) {
-                loop {}
-            }
+    impl input {
+        pub fn r#type(&self) {
+            loop {}
         }
     }
-    pub mod input {}
-
-    pub use elements::*;
 }
+pub mod input {}
+
+pub use elements::*;
