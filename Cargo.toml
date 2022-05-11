@@ -12,8 +12,6 @@ dioxus-hooks = { path = "./packages/hooks", version = "^0.2.1", optional = true 
 
 dioxus-desktop = { path = "./packages/desktop", version = "^0.2.3", optional = true }
 
-dioxus-interpreter-js = { path = "./packages/interpreter", version = "^0.2.1", optional = true }
-
 
 [features]
 default = ["macro", "hooks", "html"]
@@ -31,7 +29,6 @@ members = [
     "packages/html",
     "packages/hooks",
     "packages/desktop",
-    "packages/interpreter",
 ]
 
 [dev-dependencies]
